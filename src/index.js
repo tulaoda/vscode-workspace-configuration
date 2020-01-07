@@ -1,1 +1,2 @@
-console.log("aa")
+const a = 5;
+console.log(a);
