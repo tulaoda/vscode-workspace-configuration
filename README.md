@@ -1,4 +1,5 @@
 # 使用vscode+es6写nodejs服务端调试配置
+## macos下解压.vscode 访达显示 ```Command+Shift+.```
 ![](./screenshot.png)
 前端的小伙伴们在babel等的加持下，已经可以愉快的使用es6来写代码了。
 
@@ -94,4 +95,5 @@ OK，现在我们就可以愉快的在vscode里用es6写nodejs了，撒花~
 参考网址：
 - http://stackoverflow.com/questions/38557822/debugging-in-visual-studio-code-with-babel-node
 - https://www.cnblogs.com/xjnotxj/p/9437528.html
+
 
