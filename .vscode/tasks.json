@@ -1,0 +1,25 @@
+{
+    // 文档传送门：https://code.visualstudio.com/docs/editor/tasks
+    // label：用户界面中使用的任务的标签。
+    // type：任务的类型。对于自定义任务，可以是shell或process。如果shell指定，则该命令将解释为Shell命令（例如：bash，cmd或PowerShell）。如果process指定，则命令将解释为要执行的过程。
+    // command：要执行的实际命令。
+    // windows：Windows的任何特定属性。在Windows操作系统上执行命令时，将使用该命令代替默认属性。
+    // group：定义任务所属的组。在示例中，它属于该test组。可以通过从命令面板运行“运行测试任务”来执行属于测试组的任务。
+    // presentation：定义如何在用户界面中处理任务输出。在此示例中，显示了显示输出的Integrated Terminal，always并new在每次运行的任务上创建了一个终端。
+    // options：覆盖cwd（当前工作目录），env（环境变量）或shell（默认外壳程序）的默认值。可以为每个任务设置选项，也可以为全局或每个平台设置选项。此处配置的环境变量只能在您的任务脚本或过程中引用，并且如果它们是args，command或其他任务属性的一部分，则无法解析。
+    // runOptions：定义何时以及如何运行任务。
+    "version": "2.0.0",
+    "command": "npm", //执行npm命令
+    "type": "shell", // 任务执行的是shell命令
+    "tasks": [
+        {
+            "type": "shell", // 任务执行的是shell命令
+            "label": "build", //task名称
+            "args": ["run", "build"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}

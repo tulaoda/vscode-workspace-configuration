@@ -1,0 +1,33 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+    /* 编辑器 */
+
+    //缩进为4个空格
+    "editor.tabSize": 4,
+    // 每次保存的时候自动格式化
+    "editor.formatOnSave": true,
+
+    /* Git */
+    "git.autofetch": true,
+
+    /* 图标主题 */
+    "workbench.iconTheme": "vscode-icons",
+
+    /* 代码格式化 */
+    // 让函数(名)和后面的括号之间加个空格
+    "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+    "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+    "csscomb.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    // 配置排除的文件和文件夹的 glob 模式。例如，文件资源管理器将根据此设置决定要显示或隐藏的文件和文件夹。可在[此处](https://code.visualstudio.com/docs/editor/codebasics#_advanced-search-options)阅读有关 glob 模式的详细信息。
+    "files.exclude": {
+        "**/.idea": false,
+        "**/.nyc_output": true,
+        "**/build": true,
+        "**/coverage": true
+    },
+    // 由于性能原因，超过这个长度的行将不会被标记
+    "editor.maxTokenizationLineLength": 20000
+}

@@ -1,0 +1,34 @@
+{
+    // 文档传送门：https://code.visualstudio.com/docs/editor/debugging
+    // type-用于此启动配置的调试器的类型。每安装调试扩展引入一个类型：node用于内置节点调试器，例如，或php与go对PHP和围棋扩展。
+    // request-此启动配置的请求类型。当前，launch并且attach受支持。
+    // name -在调试启动配置下拉列表中显示的易于阅读的名称
+
+    // 这是所有启动配置可用的一些可选属性：
+    // preLaunchTask-要在调试会话开始之前启动任务，请将此属性设置为task.json（在工作区的.vscode文件夹中）指定的任务的名称。或者，可以将其设置${defaultBuildTask}为使用默认的构建任务。
+    // postDebugTask-要在调试会话结束时启动任务，请将此属性设置为task.json（在工作区的.vscode文件夹中）指定的任务名称。
+    // internalConsoleOptions -此属性控制调试会话期间“调试控制台”面板的可见性。
+    // debugServer- 仅适用于调试扩展作者：此属性允许您连接到指定的端口，而不必启动调试适配器。
+    // serverReadyAction-如果要调试的程序在调试控制台或集成终端上输出特定消息时，要在Web浏览器中打开URL。有关详细信息，请参见下面的“ 调试服务器程序时自动打开URI”部分。
+    
+    // 许多调试器支持以下一些属性：
+    // program -启动调试器时要运行的可执行文件或文件
+    // args -参数传递给程序进行调试
+    // env-环境变量（该值null可用于“取消定义”变量）
+    // cwd -当前工作目录，用于查找依赖关系和其他文件
+    // port -连接到正在运行的进程时的端口
+    // stopOnEntry -程序启动时立即中断
+    // console-什么样的控制台来使用，例如internalConsole，integratedTerminal或externalTerminal
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "启动程序",
+            "program": "${workspaceFolder}/src/index.js",
+            "sourceMaps": true, //sourcemap打开
+            "outFiles": ["${workspaceFolder}/dist/index.js"], //源映射，指定实际执行文件
+            "preLaunchTask": "build" //首先执行build task
+        }
+    ]
+}
