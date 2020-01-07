@@ -10,7 +10,7 @@
     // internalConsoleOptions -此属性控制调试会话期间“调试控制台”面板的可见性。
     // debugServer- 仅适用于调试扩展作者：此属性允许您连接到指定的端口，而不必启动调试适配器。
     // serverReadyAction-如果要调试的程序在调试控制台或集成终端上输出特定消息时，要在Web浏览器中打开URL。有关详细信息，请参见下面的“ 调试服务器程序时自动打开URI”部分。
-    
+
     // 许多调试器支持以下一些属性：
     // program -启动调试器时要运行的可执行文件或文件
     // args -参数传递给程序进行调试
@@ -29,6 +29,13 @@
             "sourceMaps": true, //sourcemap打开
             "outFiles": ["${workspaceFolder}/dist/index.js"], //源映射，指定实际执行文件
             "preLaunchTask": "build" //首先执行build task
+        },
+        {
+            "type": "node",
+            "request": "attach",
+            "name": "附加到端口",
+            "address": "localhost",
+            "port": 3000
         }
     ]
 }

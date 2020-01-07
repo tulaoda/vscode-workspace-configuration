@@ -15,8 +15,6 @@
   ]
 }
 ```
-复制代码
- 
 
 其实此时已经可以通过babel-node来执行你的es6代码了。
 ```js 
@@ -79,7 +77,7 @@ package.json中增加build命令，使用babel转换es6代码。
             "request": "attach",
             "name": "附加到端口",
             "address": "localhost",
-            "port": 5858
+            "port": 3000
         }
     ]
 }
