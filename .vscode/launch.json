@@ -35,7 +35,7 @@
             "request": "attach",
             "name": "附加到端口",
             "address": "localhost",
-            "port": 3000
+            "port": 9229
         }
     ]
 }

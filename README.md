@@ -77,7 +77,7 @@ package.json中增加build命令，使用babel转换es6代码。
             "request": "attach",
             "name": "附加到端口",
             "address": "localhost",
-            "port": 3000
+            "port": 9229
         }
     ]
 }
@@ -91,5 +91,7 @@ package.json中增加build命令，使用babel转换es6代码。
 
 OK，现在我们就可以愉快的在vscode里用es6写nodejs了，撒花~
 
-参考网址：http://stackoverflow.com/questions/38557822/debugging-in-visual-studio-code-with-babel-node
+参考网址：
+- http://stackoverflow.com/questions/38557822/debugging-in-visual-studio-code-with-babel-node
+- https://www.cnblogs.com/xjnotxj/p/9437528.html
 
